@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="eWash"
+                app:titleTextAppearance="@style/ActionBarTitle"
+                app:titleMarginStart="20dp"
+                app:titleTextColor="@android:color/white" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_car_wash"
+            android:layout_width="164dp"
+            android:layout_height="164dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp"
+            android:padding="10dp"
+            app:fb_defaultColor="@color/colorPrimaryDark"
+            app:fb_focusColor="@color/colorPrimaryLight"
+            app:fb_iconPaddingRight="0dp"
+            app:fb_iconPaddingTop="26dp"
+            app:fb_iconResource="@drawable/car_wash_large"
+            app:fb_radius="164dp"
+            app:fb_text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_car_wash"
+            android:id="@+id/button_layout"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/admin_text"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Welcome Admin. Click Button to View User Requests."
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="45dp"
+                android:paddingEnd="45dp"
+                app:fb_defaultColor="@color/colorPrimaryDark"
+                app:fb_focusColor="@color/colorPrimaryLight"
+                app:fb_fontIconSize="32sp"
+                app:fb_iconPosition="top"
+                app:fb_radius="30dp"
+                app:fb_text="View History"
+                app:fb_textColor="#FFFFFF"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

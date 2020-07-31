@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">eWash</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8736882148099200/7762493426</string>
+    <string name="standard_wash_info">\u2022 Wipe Interior\n\u2022 Vacuum</string>
+    <string name="executive_wash_info">\u2022 Wipe Interior\n\u2022Leather Care\n\u2022 Vacuum\n\u2022 Tire Shine &amp; Polish</string>
+    <string name="valet_wash_info">\u2022 Wipe Interior\n\u2022Leather Care\n\u2022 Vacuum\n\u2022 Tire Shine &amp; Polish\n\u2022Interior Ceiling with Leather Creme\n\u2022Engine Wash</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:titleTextAppearance="@style/ActionBarTitle"
+                app:titleMarginStart="20dp"
+                app:titleTextColor="@android:color/white" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/main_relative_layout"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_large"
+            android:layout_width="164dp"
+            android:layout_height="164dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:padding="10dp"
+            app:fb_borderColor="#FFFFFF"
+            app:fb_borderWidth="1dp"
+            app:fb_defaultColor="@color/colorPrimaryDark"
+            app:fb_focusColor="@color/colorPrimaryLight"
+            app:fb_iconPosition="top"
+            app:fb_iconPaddingTop="15dp"
+            app:fb_radius="164dp"
+            app:fb_text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_large"
+            android:id="@+id/button_layout"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/prompt_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Prompt Text"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="45dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                android:paddingEnd="45dp"
+                app:fb_defaultColor="@color/colorPrimaryDark"
+                app:fb_focusColor="@color/colorPrimaryLight"
+                app:fb_fontIconSize="32sp"
+                app:fb_iconPosition="right"
+                app:fb_iconPaddingRight="12dp"
+                app:fb_radius="30dp"
+                app:fb_text="Button 1"
+                app:fb_textColor="#FFFFFF"/>
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="45dp"
+                android:paddingEnd="45dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/colorPrimaryDark"
+                app:fb_focusColor="@color/colorPrimaryLight"
+                app:fb_fontIconSize="32sp"
+                app:fb_iconPosition="right"
+                app:fb_iconPaddingRight="12dp"
+                app:fb_radius="30dp"
+                app:fb_text="Button 2"
+                app:fb_textColor="#FFFFFF"/>
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="45dp"
+                android:paddingEnd="45dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@android:color/transparent"
+                app:fb_focusColor="@android:color/transparent"
+                app:fb_fontIconSize="32sp"
+                app:fb_iconPosition="right"
+                app:fb_iconPaddingRight="12dp"
+                app:fb_radius="30dp"
+                app:fb_text="Button 3"
+                app:fb_textColor="#FFFFFF"/>
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/refresh_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            app:fabSize="normal"
+            app:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/refresh"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

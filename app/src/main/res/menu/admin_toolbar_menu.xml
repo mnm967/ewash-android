@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pending_requests"
+        android:title="Pending"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/accepted_requests"
+        android:title="Accepted"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/completed_requests"
+        android:title="Completed"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/rejected_requests"
+        android:title="Rejected"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/cancelled_requests"
+        android:title="Cancelled"
+        app:showAsAction="never"/>
+</menu>
