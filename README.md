@@ -1,6 +1,6 @@
 # eWash - Android App
 
-eWash is a native Android app that brings car washes right to your doorstep. With eWash, you can quickly and easily order a car wash from the comfort of your own home.
+eWash is a native Android app (using Firebase) that brings car washes right to your doorstep. With eWash, you can quickly and easily order a car wash from the comfort of your own home.
 
 # Screenshots
 
